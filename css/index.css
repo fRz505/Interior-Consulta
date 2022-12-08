@@ -129,7 +129,7 @@ body {
 
 /* main */
 
-.main {
+.main-index {
   display: flex;
   padding: 3rem 0;
 }
@@ -336,6 +336,7 @@ body {
     display: inline-block;
     margin: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
     
     
   }
@@ -385,7 +386,7 @@ body {
 }
 
 .titulo {
-  font-size: 250%;
+  font-size: 30px;
   color:#bbe1fa;
   text-align: center;
   margin-bottom: 20px;
@@ -620,6 +621,7 @@ footer .redes a:hover {
     flex-direction: column;
   } */ 
   .right-nav{
+    padding: 15px;
     display: flex;
     flex-direction: column !important;
     gap: 1rem;
@@ -633,7 +635,7 @@ footer .redes a:hover {
 
   /* main */
 
-  .main {
+  .main-index {
     flex-direction: column;
     row-gap: 2rem;
     padding: 1rem 0;

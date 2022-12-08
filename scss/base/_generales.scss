@@ -1,0 +1,26 @@
+:root {
+    --black-color: #181719;
+    --white-color: #ffffff;
+    --lightgrey-color: #bdbdbd;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white-color);
+  }
+
+  body {
+    width: 100%;
+    overflow: hidden auto;
+    margin: 0;
+    background-color: var(--black-color) !important;
+    scrollbar-color: light;
+  }
+   
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }

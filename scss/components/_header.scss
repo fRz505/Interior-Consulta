@@ -1,0 +1,98 @@
+ @import "../base/variables";
+
+
+header {
+ 
+  .left-nav {
+    @extend %flex;
+    width: 102px;
+    height: 32px;
+    border: solid $color-secundario 1px;
+    a {
+      text-decoration: none;
+    }
+    .left-nav-item {
+      font-family: "Crimson Pro", serif;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 0.875rem;
+      line-height: 1rem;
+      text-transform: uppercase;
+    }
+  }
+  .right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5rem;
+    a {
+      text-decoration: none;
+    }
+    .right-nav-item {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      padding: 0.3rem 0;
+      &:hover {
+        color: $color-principal;
+      }
+    }
+    .right-nav-item.active {
+        font-weight: 600;
+        border-bottom: 2px solid $color-secundario; 
+      }
+  }
+}
+
+.overlay-nav-container {
+  width: 0;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  .overlay-close-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .overlay-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    position: relative;
+    top: 30%;
+    .overlay-nav-item {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 1.375rem;
+      text-decoration: none;
+    }
+    .overlay-nav-item highlight {
+      font-weight: 600;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .header {
+    .left-nav {
+      margin: 0 auto;
+    }
+    .right-nav{
+      padding: 15px;
+      display: flex;
+      flex-direction: column !important;
+      gap: 1rem;
+    }
+  }
+}
