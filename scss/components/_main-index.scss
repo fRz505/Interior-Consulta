@@ -102,6 +102,12 @@
     flex-direction: column;
     row-gap: 2rem;
     padding: 1rem 0;
+    .content-img {
+      .img-main {
+
+        width: 315px;
+      }
+    }
     .content-info {
       row-gap: 2rem;
       h1 {
@@ -118,15 +124,15 @@
         line-height: 1rem;
       }
       img {
-        width: 350px;
+        width: 350px !important;
       }
     }
     .designer-info {
-      row-gap: 0.3rem;
-      width: 300px;
-      height: 138px;
-      bottom: -90px;
-      right: 10px;
+      row-gap: 0.3rem !important;
+      width: 300px !important;
+      height: 138px !important;
+      bottom: -90px !important;
+      right: 10px !important;
       img {
         width: 45px;
       }
@@ -143,4 +149,5 @@
       }
     }
   }
+  
 }

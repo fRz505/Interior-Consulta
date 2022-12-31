@@ -3,7 +3,7 @@
 .footer {
   @include flex (flex, column, center);
   row-gap: 1rem;
-  margin: 10rem auto 2rem;
+  margin: 1rem;
   .footer-text {
     p {
       font-family: "Montserrat", sans-serif;
