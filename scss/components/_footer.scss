@@ -1,6 +1,6 @@
 @import "../base/variables";
 
-.footer {
+footer {
   @include flex (flex, column, center);
   row-gap: 1rem;
   margin: 1rem;
