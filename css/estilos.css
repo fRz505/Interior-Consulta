@@ -446,13 +446,13 @@ header .left-nav {
   justify-content: center;
   align-items: center; }
 
-.footer {
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
   margin: 1rem; }
-  .footer .footer-text p {
+  footer .footer-text p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
